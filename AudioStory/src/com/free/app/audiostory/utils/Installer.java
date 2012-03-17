@@ -1,6 +1,6 @@
 package com.free.app.audiostory.utils;
 
-public class Installer implements InstallerImpl {
+public abstract class Installer implements InstallerImpl {
 
 	@Override
 	public boolean verifyData() throws Exception {
@@ -10,8 +10,11 @@ public class Installer implements InstallerImpl {
 
 	@Override
 	public void downloadData() throws Exception {
-		// TODO Auto-generated method stub
-
+		//TODO
 	}
-
+	
+	public abstract boolean onDownloadCompleted();
+	public abstract boolean onDownloading();
+	public abstract boolean onDownloadError();
+	public abstract boolean onStartDownload();
 }
