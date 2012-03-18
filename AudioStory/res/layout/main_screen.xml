@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" android:background="@drawable/bia">
 
-    <TextView
-        android:layout_width="fill_parent"
+    <com.free.app.audiostory.ui.TransparentPanel
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_marginBottom="30dip"
+        android:gravity="center"
+        android:orientation="horizontal" android:layout_gravity="bottom">
 
-</LinearLayout>
+        <com.free.app.audiostory.ui.TransparentButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nghe"
+            android:textColor="#ffffff" android:onClick="onClick_Nghe"/>
+
+        <com.free.app.audiostory.ui.TransparentButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Chia sẻ"
+            android:textColor="#ffffff" />
+
+        <com.free.app.audiostory.ui.TransparentButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thư viện"
+            android:textColor="#ffffff" />
+    </com.free.app.audiostory.ui.TransparentPanel>
+
+</FrameLayout>

@@ -2,7 +2,90 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="bottom"
     android:orientation="vertical" >
-    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/s1" android:layout_weight="1"/>
+
+    <com.free.app.audiostory.ui.TransparentPanel
+        android:id="@+id/layout_media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:indeterminateOnly="false"
+            android:maxHeight="8dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:thumb="@drawable/seek_thumb_actions" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.free.app.audiostory.ui.TransparentButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:onClick="onClick_Play"
+                android:text="Play/Pause"
+                android:textColor="#ffffff" />
+
+            <com.free.app.audiostory.ui.TransparentButton
+                android:id="@+id/btn_sleeptimer"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:onClick="onClick_Play"
+                android:text="Hẹn giờ ngủ"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </com.free.app.audiostory.ui.TransparentPanel>
 
 </LinearLayout>
