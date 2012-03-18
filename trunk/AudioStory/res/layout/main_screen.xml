@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Chia sẻ"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff" android:onClick="onClick_Share"/>
 
         <com.free.app.audiostory.ui.TransparentButton
             android:id="@+id/button4"
@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Thư viện"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff" android:onClick="onClick_Library"/>
     </com.free.app.audiostory.ui.TransparentPanel>
 
 </FrameLayout>

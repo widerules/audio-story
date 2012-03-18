@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.AudioStoryActivity"/>
+        <activity android:name=".ui.LibraryActivity"/>
     </application>
 
 </manifest>
