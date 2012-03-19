@@ -1,7 +1,7 @@
 package com.free.app.audiostory.utils;
 
 public abstract class Installer implements InstallerImpl {
-
+		
 	@Override
 	public boolean verifyData() throws Exception {
 		// TODO Auto-generated method stub

@@ -10,7 +10,11 @@ import android.view.View;
 
 import com.free.app.audiostory.R;
 import com.free.app.audiostory.defs.Defs;
-
+/**
+ * 
+ * @author tam.nguyenhoang
+ *
+ */
 public class MainScreenActivity extends Activity implements Defs{
     ProgressDialog progDialog;
     int maxValue=100;
