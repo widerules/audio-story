@@ -4,7 +4,11 @@ import com.free.app.audiostory.R;
 
 import android.app.Activity;
 import android.os.Bundle;
-
+/**
+ * 
+ * @author viet.nguyenhung
+ *
+ */
 public class LibraryActivity extends Activity {
 	 /** Called when the activity is first created. */
     @Override
